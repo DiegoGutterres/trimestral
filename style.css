@@ -289,9 +289,32 @@ label {
   padding: 50px;
   border: 3px solid #545454;
   border-radius: 10px;
+  color: #545454;
   justify-content: space-between;
   margin-right: 10vh;
   text-align: center;
+  transition: .6s;
+}
+
+#g1:hover{
+  box-shadow: inset 0 -34.25em 0 0 #FC8BA6;
+  border: 3px solid #FC8BA6;
+  transform: translateY(-1em);
+  color: #FAF9F8;
+}
+
+#g2:hover{
+  box-shadow: inset 0 -34.25em 0 0 #FE9B7F;
+  border: 3px solid #FE9B7F;
+  transform: translateY(-1em);
+  color: #FAF9F8;
+}
+
+#g3:hover{
+  box-shadow: inset 0 -34.25em 0 0 #EE7FFE;
+  border: 3px solid #EE7FFE;
+  transform: translateY(-1em);
+  color: #FAF9F8;
 }
 
 .conclusao {
