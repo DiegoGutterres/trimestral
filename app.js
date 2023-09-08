@@ -54,13 +54,3 @@ menuItems.forEach((item, index) => {
     });
 });
 
-const areaButton = document.querySelector(".areaButton");
-const close = document.querySelector(".close");
-
-areaButton.addEventListener("click", () => {
-  payment.style.display = "flex";
-});
-
-close.addEventListener("click", () => {
-  payment.style.display = "none";
-});
