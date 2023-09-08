@@ -25,6 +25,7 @@ nav {
 }
 
 .title{
+  cursor: pointer;
   font-size: 2vh;
   letter-spacing: 3px;
   padding: 10px;
@@ -41,6 +42,31 @@ nav {
   cursor: pointer;
   color: #FAF9F8;
   font-weight: 400;
+  transition: 0.3s;
+}
+
+#letr:hover,
+#letr:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  color: #FE9B7F;
+  border-bottom: 1px solid #FAF9F8;
+}
+
+#arte:hover,
+#arte:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  color: #EE7FFE;
+  border-bottom: 1px solid #FAF9F8;
+}
+
+#ling:hover,
+#ling:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  color: #FC8BA6;
+  border-bottom: 1px solid #FAF9F8;
 }
 
 .slider {
@@ -100,24 +126,27 @@ nav {
 }
 
 .sobreButton {
-  border-radius: 10px;
   position: absolute;
-  top: 50%;
+  top: 60%;
   margin-left: 28vh;
   font-size: 30px;
   padding: 5px;
   font-weight: 900;
-  color: #FAF9F8;
-  border: 1px solid #545454;
-  background-color: #545454;
+  color: #545454;
+  background: none; 
+  border: none;
   z-index: 1;
   cursor: pointer;
+  transition: .6s;
 }
 
-.sobreButton:hover {
-  background-color: #FAF9F8;
-  color: #545454;
+.sobreButton:hover,
+.sobreButton:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  border-bottom: 1px solid #545454;
 }
+
 
 .sliderItem:nth-child(1) .sliderBg {
   background-color: #FC8BA6;
@@ -305,6 +334,14 @@ label {
   border-radius: 10px;
   color: #FAF9F8;
   cursor: pointer;
+  transition: .3s;
+}
+
+.clButton:hover,
+.clButton:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+
 }
 
 footer {
