@@ -114,6 +114,7 @@ nav {
   z-index: 1;
 }
 
+
 .sliderName {
   position: absolute;
   margin-left: -75vw;
@@ -124,6 +125,7 @@ nav {
   color: #545454;
   z-index: 1;
 }
+
 
 .sobreButton {
   position: absolute;
@@ -204,6 +206,11 @@ nav {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  transition: .3s;
+}
+
+.challenge:hover{
+  transform: translateY(-1em);
 }
 
 .challengeIcon {
