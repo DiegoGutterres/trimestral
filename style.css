@@ -74,16 +74,15 @@ nav {
 
 .sliderImg {
   z-index: 1;
-  width: 50vh;
+  width: 70vh;
 }
 
 .sliderTitle {
   position: absolute;
   margin-top: -30vh;
-  right: 10%;
-  max-width: 35vh;
-  font-size: 60px;
-  font-weight: 900;
+  right: 0%;
+  max-width: 50vh;
+  font-size: 50px;
   text-align: center;
   color: #545454;
   z-index: 1;
@@ -91,8 +90,8 @@ nav {
 
 .sliderName {
   position: absolute;
+  margin-left: -75vw;
   top: 10%;
-  left: 10%;
   font-size: 60px;
   font-weight: 300;
   text-align: center;
@@ -101,10 +100,12 @@ nav {
 }
 
 .sobreButton {
+  border-radius: 10px;
   position: absolute;
   top: 50%;
   margin-left: 28vh;
   font-size: 30px;
+  padding: 5px;
   font-weight: 900;
   color: #FAF9F8;
   border: 1px solid #545454;
@@ -128,6 +129,7 @@ nav {
   background-color: #EE7FFE;
 }
 
+
 .sliderItem:nth-child(1) .sliderName {
   color: #FC8BA6;
 }
@@ -135,6 +137,18 @@ nav {
   color: #FE9B7F;
 }
 .sliderItem:nth-child(3) .sliderName {
+  color: #EE7FFE;
+}
+
+.sliderItem:nth-child(1) .sliderTitle {
+  color: #FC8BA6;
+}
+
+.sliderItem:nth-child(2) .sliderTitle {
+  color: #FE9B7F;
+}
+
+.sliderItem:nth-child(3) .sliderTitle {
   color: #EE7FFE;
 }
 
@@ -175,7 +189,7 @@ nav {
 }
 
 .challengeDesc {
-  color: gray;
+  color: #545454;
   width: 50%;
   height: 100px;
 }
@@ -187,13 +201,10 @@ nav {
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 }
 
-
-
 label {
   font-size: 14px;
   font-weight: 300;
 }
-
 
 .cardIcons {
   display: flex;
@@ -208,28 +219,10 @@ label {
   justify-content: space-between;
 }
 
-.sm {
-  width: 30%;
-}
-
-.close {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  background-color: gray;
-  color: white;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 2px;
-}
 
 .areaImg {
-  width: 60vw;
-  margin-left: -5vh;
+  width: 150vh;
+  margin-left: -40vh;
   margin-top: 12vh;
 }
 
@@ -244,58 +237,42 @@ label {
 .areaTitle {
   font-size: 75px;
   font-weight: 900;
+  text-align: center;
+  border-bottom: 3px solid #FC8BA6;
 }
 
 .areaDesc {
+  font-size: 24px;
   font-style: 24px;
-  color: gray;
-}
-
-.color {
-  width: 32px;
-  height: 32px;
-  border-radius: 5px;
-  background-color: black;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.areaButton {
-  float: right;
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.areaButton:hover {
-  background-color: white;
-  color: black;
+  text-align: justify;
+  color: #545454;
 }
 
 .gallery {
+  background-color: whitesmoke;
   padding: 50px;
+  color: #545454;
   display: flex;
 }
 
 .galleryItem {
   flex: 1;
   padding: 50px;
+  border: 3px solid #545454;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin-right: 10vh;
+  text-align: center;
 }
 
-.galleryImg {
-  width: 100%;
-}
-
-.newSeason {
+.conclusao {
   display: flex;
 }
 
-.nsItem {
+.clItem {
   flex: 1;
-  background-color: black;
-  color: white;
+  background-color: #545454;
+  color: #FAF9F8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -303,18 +280,30 @@ label {
   text-align: center;
 }
 
-.nsImg {
+.clImg {
   width: 100%;
   height: 500px;
 }
 
-.nsTitle {
-  font-size: 40px;
+.clTitle {
+  margin-left: 10vh;
+  margin-right: 10vh;
+  text-align: justify;
+  font-size: 16px;
 }
 
-.nsButton {
+.clTitle2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: peachpuff;
+}
+
+.clButton {
   padding: 15px;
   font-weight: 600;
+  background: none;
+  border: 1px solid peachpuff;
+  border-radius: 10px;
+  color: #FAF9F8;
   cursor: pointer;
 }
 
@@ -340,7 +329,7 @@ footer {
 
 .fListItem {
   margin-bottom: 10px;
-  color: gray;
+  color: #545454;
   cursor: pointer;
 }
 
@@ -358,8 +347,8 @@ footer {
 
 .fButton {
   padding: 5px;
-  background-color: black;
-  color: white;
+  background-color: #545454;
+  color: #FAF9F8;
 }
 
 .fIcons{
@@ -375,113 +364,4 @@ footer {
 .copyright{
   font-weight: 300;
   font-size: 14px;
-}
-
-@media screen and (max-width:480px) {
-  nav{
-    padding: 20px;
-  }
-
-  .search{
-    display: none;
-  }
-
-  .navBottom{
-    flex-wrap: wrap;
-  }
-
-  .menuItem{
-    margin: 20px;
-    font-weight: 700;
-    font-size: 20px;
-  }
-
-  .slider{
-    clip-path: none;
-  }
-
-  .sliderImg{
-    width: 90%;
-  }
-
-  .sliderBg{
-    width: 100%;
-    height: 100%;
-  }
-
-  .sliderTitle{
-    display: none;
-  }
-
-  .sliderName{
-    top: unset;
-    bottom: -50;
-    left: 0;
-    background-color: lightgrey;
-  }
-
-  .sobreButton{
-    right: 0;
-    top: 0;
-  }
-
-  .features{
-    flex-direction: column;
-  }
-
-  .area{
-    clip-path: none ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .areaImg{
-    width: 80%;
-  }
-
-  .areaDetails{
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    top: 0;
-  }
-
-  .areaTitle{
-    font-size: 50px;
-    margin: 0;
-  }
-
-  .gallery{
-    display: none;
-  }
-
-  .newSeason{
-    flex-direction: column;
-  }
-
-  .nsItem:nth-child(2){
-    padding: 50px;
-  }
-
-  footer{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footerLeft{
-    padding: 20px;
-    width: 90%;
-  }
-
-  .footerRight{
-    padding: 20px;
-    width: 90%;
-    align-items: center;
-    background-color: whitesmoke;
-  }
 }
